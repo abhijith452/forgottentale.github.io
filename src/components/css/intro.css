@@ -1,0 +1,31 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    color: rgb(141, 141, 141);
+}
+ul{   
+    display: flex;
+    
+    
+}
+li{
+    margin: 0 100px;
+    font-family: 'Segoe UI';
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.intro p{
+   width: 860px;
+   text-align: center;
+   font-family: 'Segoe UI';
+}
+.intro img,.intro h3,.intro p{
+    margin-bottom: 40px;
+}
+.intro h3{
+    font-family: 'STXingkai';
+    font-size: 50px;
+}
