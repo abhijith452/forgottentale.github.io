@@ -1,2 +1,14 @@
+.wrapper2{
+    background-color: #131313;
 
+}
+*{
+    font-family: 'Segoe UI';
+}
 
+h3{
+    color: rgb(190, 190, 190);
+}
+Projects{
+    margin-top: 60px;
+}
