@@ -13,11 +13,11 @@ class App extends React.Component
      return(
        <div className="outerwrapper">
          <div className="wrapper2">
-             <Intro/>
-             <Projects/>          
-             <Achievements/>
-             <News/>
-             <Contact/>
+             <Intro className ="component"/>
+             <Projects className ="component"/>          
+             <Achievements className ="component"/>
+             <News className ="component"/>
+             <Contact className ="component"/>
            </div>
          </div>
      )  
