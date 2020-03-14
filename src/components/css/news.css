@@ -23,3 +23,11 @@
 .News .text{
     color: rgb(255, 59, 206);
 }
+@media only screen and (max-width: 768px){
+    
+    .News .col-md-6{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

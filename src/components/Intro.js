@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/intro.css';
-import pic from './images/photo.png'
+import pic from './images/photo.webp'
 function Intro(){
     return(
         <div className="intro">

@@ -29,3 +29,12 @@
 .projects .border{
     border-radius: 20px;
 }
+@media only screen and (max-width: 768px){
+    
+    .projects .col-md-6{
+        width: 90%;
+       
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

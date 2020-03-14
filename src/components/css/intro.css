@@ -6,6 +6,7 @@
     color: rgb(141, 141, 141);
     position: relative;
    z-index: 2;
+  
 }
 ul{   
     display: flex;
@@ -33,4 +34,31 @@ li{
 }
 .intro img{
     margin-top: 70px;
+    width: 300px;
+}
+@media only screen and (max-width: 768px){
+    .intro{
+     margin: 0 auto;
+    }
+    .intro h3{
+    text-align: center;
+    width: 80%;
+    }
+    .intro p{
+        width: 90%;
+    
+     }
+     ul{   
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+     li{
+      margin-left: 0;
+      margin-right: 0;
+       
+    }
+
+
 }
