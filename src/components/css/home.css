@@ -1,0 +1,38 @@
+
+.Home{
+   
+    background-image: url("../assets/background.png");
+
+}
+.Home .nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Home .nav ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 60px;
+}
+.Home .nav ul li a{
+ text-decoration: none;
+}
+.Home .creator{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+img
+{
+    width: 300px;
+    margin-top: -100px;
+}
+.Home .creator h3{
+    color: white;
+}
