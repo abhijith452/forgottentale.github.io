@@ -1,36 +1,45 @@
 import React from 'react';
+import pic1 from './assets/dv.png';
+import pic2 from './assets/teslacoil.png';
+import pic3 from './assets/car.png';
 
-const carddata = {
-   
-        img : "hello",
-        title : "Water Pipeline Network Monitioring System",
-        description : "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart",
-
-        img : "hello",
-        title : "Water Pipeline Network Monitioring System",
-        description : "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart",
-
-        img : "hello",
-        title : "Water Pipeline Network Monitioring System",
-        description : "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart",
-  
-}
 
 function Blog() {
   return (
-    <div className="Blog">
-        <Card data = {carddata}/>
-    </div>
+    <div className= "Blog">
+  
+   <center><h2 className = "title">MY <span>BLOG</span></h2></center>
+   <div className="cards">
+   <Card 
+     img = {pic1}
+     title = "Water Pipeline Monitoring System"
+     des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
+   />
+   <Card 
+     img = {pic2}
+     title = "Water Pipeline Monitoring System"
+     des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
+   />
+   <Card 
+     img = {pic3}
+     title = "Water Pipeline Monitoring System"
+     des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
+   />
+
+   </div>
+   
+   
+   </div>
   );
 }
 
 function Card(props){
     return(
-        <div className = "cardbody">
-            {props.data.img}
-            <h3>{props.data.title}</h3>
-           <p>{props.data.description}</p> 
-        </div>
+      <div className = "cardbody">
+      <img src={props.img}/>
+       <h3>{props.title}</h3>
+       <p>{props.des}</p>
+    </div>
     )
 }
 export default Blog;

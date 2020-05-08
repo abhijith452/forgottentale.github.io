@@ -1,5 +1,4 @@
 import React from 'react';
-import './css/projects.css';
 import pic1 from './assets/dv.png';
 import pic2 from './assets/teslacoil.png';
 import pic3 from './assets/car.png';
@@ -8,7 +7,7 @@ function Projects() {
   return (
  <div className= "Projects">
    <center><h2 className = "title">MY <span>PROJECTS</span></h2></center>
-   <div className="project">
+   <div className="cards">
    <Card 
      img = {pic1}
      title = "Water Pipeline Monitoring System"

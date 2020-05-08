@@ -1,15 +1,14 @@
 import React from 'react';
+
 import pic1 from './assets/dv.png';
 import pic2 from './assets/teslacoil.png';
 import pic3 from './assets/car.png';
-import './css/Positions.css';
 
-
-function Positions() {
+function Position() {
   return (
-    <div className= "Positions">
-   <center><h2 className ="title">MY <span>POSITIONS</span></h2></center>
-   <div className="position">
+ <div className= "Projects">
+   <center><h2 className = "title">MY <span>POSITIONS</span></h2></center>
+   <div className="cards">
    <Card 
      img = {pic1}
      title = "Water Pipeline Monitoring System"
@@ -34,12 +33,10 @@ function Positions() {
 function Card(props){
     return(
         <div className = "cardbody">
-             <div className = "cardbody">
           <img src={props.img}/>
            <h3>{props.title}</h3>
            <p>{props.des}</p>
         </div>
-        </div>
     )
 }
-export default Positions;
+export default Position;
