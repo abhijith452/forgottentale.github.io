@@ -1,35 +1,44 @@
 import React from 'react';
+import pic1 from './assets/dv.png';
+import pic2 from './assets/teslacoil.png';
+import pic3 from './assets/car.png';
+import './css/Positions.css';
 
-const carddata = {
-   
-        img : "hello",
-        title : "Microsoft Student Partner",
-        description : "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart",
-
-        img : "hello",
-        title : "Microsoft Student Partner",
-        description : "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart",
-
-        img : "hello",
-        title : "Microsoft Student Partner",
-        description : "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart",
-  
-}
 
 function Positions() {
   return (
-    <div className="Positions">
-        <Card data = {carddata}/>
-    </div>
+    <div className= "Positions">
+   <center><h2 className ="title">MY <span>POSITIONS</span></h2></center>
+   <div className="position">
+   <Card 
+     img = {pic1}
+     title = "Water Pipeline Monitoring System"
+     des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
+   />
+   <Card 
+     img = {pic2}
+     title = "Water Pipeline Monitoring System"
+     des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
+   />
+   <Card 
+     img = {pic3}
+     title = "Water Pipeline Monitoring System"
+     des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
+   />
+
+   </div>
+   </div>
   );
 }
 
 function Card(props){
     return(
         <div className = "cardbody">
-            {props.data.img}
-            <h3>{props.data.title}</h3>
-           <p>{props.data.description}</p> 
+             <div className = "cardbody">
+          <img src={props.img}/>
+           <h3>{props.title}</h3>
+           <p>{props.des}</p>
+        </div>
         </div>
     )
 }
