@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './components/Home';
 import Projects from './components/Project';
 import Positions from './components/Position';
-import Blog from './components/Blog';
+import Skills from './components/Skills';
 import Contact from './components/Contact'
 import Menu from './menu'
 import './components/css/App.css';
@@ -26,9 +26,7 @@ function Content() {
       <Home />
       <Projects/>
       <Positions/>
-      
-  
-    
+      <Skills/>
     </div>
   );
 }
