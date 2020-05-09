@@ -4,19 +4,29 @@ import Projects from './components/Project';
 import Positions from './components/Position';
 import Blog from './components/Blog';
 import Contact from './components/Contact'
+import Menu from './menu'
 import './components/css/App.css';
 
 function App() {
   return (
     <div className="App">
-      
-     <Home/>
-     <Projects/>
-    <Positions/>
-     <Blog/>
-     <Contact/>
+    <Menu />
+    <Content/>
+   
     </div>
   );
 }
 
 export default App;
+
+
+function Content() {
+  return (
+    <div className="Content">
+      <Home />
+      
+  
+    
+    </div>
+  );
+}

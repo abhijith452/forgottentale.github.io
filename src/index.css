@@ -1,9 +1,32 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
+}
+body{
+  background-color: #1D1D1D;
 }
 
+.Menu{
+  background-color: #181818;
+  height: 100vh;
+  position: fixed;
+
+}
+.Menu ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+list-style: none;
+}
+.Menu li{
+margin: 20px;
+color: #10EFFF;
+opacity: .2;
+}
+.Content{
+  
+}
 
 .title{
   

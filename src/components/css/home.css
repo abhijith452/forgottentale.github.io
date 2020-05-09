@@ -1,63 +1,15 @@
-
 .Home{
-   
-    background-image: url("../assets/background.png");
-
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-.Home .nav{
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.Home .nav ul{
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin-right: 60px;
-}
-.Home .nav ul li a{
- text-decoration: none;
-}
-.Home .creator{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.Home img
-{
-    width: 200px;
-    margin-top: -150px;
-}
-.Home .creator h3{
-    margin-top: 20px;
+.Home h1{
     color: white;
-    font-size: 35px;
-    word-spacing: 2px;
+    font-weight: 900;
+    margin-left: 150px;
+    font-size: 60px;
 }
-.Home .creator p{
-    margin-top: 20px;
-    color: white;
-    font-size: 25px;
-    font-weight: lighter;
-   
-}
-.Home .creator .socials{
-    width: 400px;
-    margin-top: 30px;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.Home .creator .socials a{
-    color: rgb(204, 204, 204);
-    
-}
-.Home .creator .socials a:hover{
-    color: rgb(53, 164, 255);
-    
+.Home svg{
+ margin-left: 100px;
 }
