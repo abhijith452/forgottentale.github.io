@@ -1,8 +1,7 @@
 import React from 'react';
-
-import pic1 from './assets/dv.png';
-import pic2 from './assets/teslacoil.png';
-import pic3 from './assets/car.png';
+import msp from './assets/Msp.svg';
+import bolt from './assets/Bolt Logo.svg';
+import './css/position.css'
 
 function Position() {
   return (
@@ -10,20 +9,16 @@ function Position() {
    <center><h2 className = "title">MY <span>POSITIONS</span></h2></center>
    <div className="cards">
    <Card 
-     img = {pic1}
-     title = "Water Pipeline Monitoring System"
+     img = {msp}
+     title = "Microsoft Student Partner"
      des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
    />
    <Card 
-     img = {pic2}
-     title = "Water Pipeline Monitoring System"
+     img = {bolt}
+     title = "Bolt Student Ambassasor"
      des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
    />
-   <Card 
-     img = {pic3}
-     title = "Water Pipeline Monitoring System"
-     des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
-   />
+ 
 
    </div>
    </div>
@@ -32,10 +27,13 @@ function Position() {
 
 function Card(props){
     return(
-        <div className = "cardbody">
-          <img src={props.img}/>
+        <div className = "vcardbody">
+           <img src={props.img}></img>
+           <div>
            <h3>{props.title}</h3>
            <p>{props.des}</p>
+           </div>
+         
         </div>
     )
 }

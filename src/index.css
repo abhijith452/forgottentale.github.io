@@ -24,43 +24,13 @@ margin: 20px;
 color: #10EFFF;
 opacity: .2;
 }
-.Content{
-  
-}
 
 .title{
   
   letter-spacing: 10px;
   padding: 100px 0;
 }
- .cards
- {
-  display: flex;
-  justify-content: space-around;
- }
- .cardbody{
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  padding-bottom: 100px;
 
-}
-
-.cardbody h3{
-  margin: 25px 0;
-  font-size: 26px;
-  font-weight: 600;
-}
-.cardbody p{
-  letter-spacing: 3px;
-  word-spacing: 2px;
-  line-height: 22px;
-}
-.cardbody img{
-  width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-}
 span{
   color: #0FA9D8;
 }

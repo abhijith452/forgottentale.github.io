@@ -24,6 +24,8 @@ function Content() {
   return (
     <div className="Content">
       <Home />
+      <Projects/>
+      <Positions/>
       
   
     

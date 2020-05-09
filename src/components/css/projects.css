@@ -1,0 +1,35 @@
+.Projects{
+    color: white;
+}
+.timeline
+{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ color: white;
+}
+.cardbody{
+ display: flex;
+ flex-direction: column;
+ width: 550px;
+ padding-bottom: 100px;
+ border-left:1px white solid ;
+ position: relative;
+}
+.cardbody h4{
+color: #EFFF00;
+margin-left: 60px;
+}
+.cardbody h3{
+ margin: 25px 0;
+ font-size: 26px;
+ font-weight: 600;
+ margin-left: 60px;
+}
+.cardbody p{
+ letter-spacing: 3px;
+ word-spacing: 2px;
+ line-height: 22px;
+ color: rgb(175, 175, 175);
+ margin-left: 60px;
+}

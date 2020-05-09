@@ -1,29 +1,30 @@
 import React from 'react';
-import pic1 from './assets/dv.png';
-import pic2 from './assets/teslacoil.png';
-import pic3 from './assets/car.png';
+import './css/projects.css';
 
 function Projects() {
   return (
  <div className= "Projects">
    <center><h2 className = "title">MY <span>PROJECTS</span></h2></center>
-   <div className="cards">
+   <div className="timeline">
    <Card 
-     img = {pic1}
+     date ="Feb 2020"
+     cat = "IOT / DATA VISUALISATION"
      title = "Water Pipeline Monitoring System"
      des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
    />
-   <Card 
-     img = {pic2}
+      <Card 
+     date ="Feb 2020"
+     cat = "IOT / DATA VISUALISATION"
      title = "Water Pipeline Monitoring System"
      des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
    />
-   <Card 
-     img = {pic3}
+      <Card 
+     date ="Feb 2020"
+     cat = "IOT / DATA VISUALISATION"
      title = "Water Pipeline Monitoring System"
      des = "A realtime water pressure,ph and water flow rate monitoring system. A webapp is used to display the data on a chart"
    />
-
+  
    </div>
    </div>
   );
@@ -32,7 +33,8 @@ function Projects() {
 function Card(props){
     return(
         <div className = "cardbody">
-          <img src={props.img}/>
+           <p>{props.date}</p>
+           <h4>{props.cat}</h4>
            <h3>{props.title}</h3>
            <p>{props.des}</p>
         </div>
