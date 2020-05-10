@@ -3,6 +3,7 @@
   padding: 0;
   font-family: 'Open Sans';
 }
+
 body{
   background-color: #1D1D1D;
 }
@@ -13,7 +14,9 @@ body{
   background-color: #181818;
   height: 100vh;
   position: fixed;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Menu ul{
   display: flex;
@@ -23,10 +26,18 @@ body{
 }
 .Menu li{
 margin: 20px;
-color: #10EFFF;
 opacity: .2;
 }
-
+.Menu a{
+  color: #10EFFF;
+  position: relative;
+}
+.Menu li:hover{
+  opacity: 1;
+  }
+.Menu a:hover{
+  color: rgb(188, 230, 1);
+}
 .title{
   
   letter-spacing: 10px;

@@ -19,24 +19,29 @@
     height: 50px;
     margin: 20px 0;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgb(75, 75, 75);
     color: white;
+    padding-left: 10px;
 }
 .Contact form .email{
 display: flex;
 justify-content: space-between;
 }
 .Contact form .email input{
-    width: 190px;
+    width: 180px;
+    padding-left: 10px;
 }
+
 .Contact form textarea{
     height: 60px;
     margin: 20px 0;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgb(75, 75, 75);
     color: white;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .Contact .socials h4{

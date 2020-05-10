@@ -5,7 +5,7 @@ import './css/position.css'
 
 function Position() {
   return (
- <div className= "Projects">
+ <div className= "Positions" id="Positions">
    <center><h2 className = "title">MY <span>POSITIONS</span></h2></center>
    <div className="cards">
    <Card 
