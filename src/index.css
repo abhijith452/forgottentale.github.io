@@ -6,14 +6,17 @@
 
 body{
   background-color: #1D1D1D;
+
 }
 .Content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper{
   width: 1080px;
-  margin: 0 auto;
 }
-.component{
-  height: 100vh;
-}
+
 .Menu{
   background-color: #181818;
   height: 100vh;
@@ -63,4 +66,15 @@ button{
 button:hover{
   background-color: #EFFF00;
   color: #1D1D1D;
+}
+@media only screen and (max-width: 768px){
+  .Menu ul{
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  .Menu{
+    width: 100ch;
+    height: auto;
+  }
 }

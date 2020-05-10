@@ -24,12 +24,14 @@ export default App;
 function Content() {
   return (
     <div className="Content">
+      <div className="wrapper">
       <Home />
       <Projects/>
       <Positions/>
       <Skills/>
       <About/>
       <Contact/>
+      </div>
     </div>
   );
 }

@@ -17,3 +17,9 @@
 .About p{
     color: rgb(167, 167, 167);
 }
+@media only screen and (max-width: 768px){
+
+    .About{
+        flex-direction: column;
+    }
+}
