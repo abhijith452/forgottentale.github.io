@@ -1,0 +1,68 @@
+.Contact{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Contact h3{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+.Contact form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+ 
+}
+.Contact form input{
+    height: 50px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+.Contact form .email{
+display: flex;
+justify-content: space-between;
+}
+.Contact form .email input{
+    width: 190px;
+}
+.Contact form textarea{
+    height: 60px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+.Contact .socials h4{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.Contact .socials .links{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+.Contact .socials .links a{
+    color: white;
+}
+.Contact .socials .links a:hover{
+    color: rgb(34, 166, 255);
+}
+.Contact .socials h5{
+    font-size: 20px;
+    color: white;
+    margin: 20px 0;
+    margin-top: 60px;
+}
+.Contact .socials p{
+    color: white;
+}
