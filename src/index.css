@@ -7,6 +7,10 @@
 body{
   background-color: #1D1D1D;
 }
+.Content{
+  width: 1080px;
+  margin: 0 auto;
+}
 .component{
   height: 100vh;
 }

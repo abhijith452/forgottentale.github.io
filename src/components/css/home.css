@@ -4,17 +4,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.Home .jumbotron{
-    margin-left: 150px;
-}
 .Home h1{
     color: white;
     font-weight: 900;
-   
     font-size: 60px;
-}
-.Home svg{
- margin-left: 100px;
 }
 .Home p{
     color: rgb(73, 73, 73);
