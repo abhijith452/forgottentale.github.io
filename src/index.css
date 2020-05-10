@@ -6,7 +6,9 @@
 body{
   background-color: #1D1D1D;
 }
-
+.component{
+  height: 100vh;
+}
 .Menu{
   background-color: #181818;
   height: 100vh;

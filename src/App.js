@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact'
 import Menu from './menu'
 import './components/css/App.css';
+import About from './components/About';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function Content() {
       <Projects/>
       <Positions/>
       <Skills/>
+      <About/>
     </div>
   );
 }

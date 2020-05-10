@@ -2,7 +2,7 @@
 import React from 'react'
 import './css/skills.css'
 function Skills(){
-    return(<div className="Skills">
+    return(<div className="Skills component">
        <center><h3 className ="title">MY <span>SKILLS</span></h3></center> 
         <div className="PB">
               <Pbar
