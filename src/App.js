@@ -1,34 +1,37 @@
 import React from 'react';
-import './App.css';
-import Intro from './components/Intro';
-import Projects from './components/Projects';
-import Achievements from './components/Achievements';
-import News from './components/News';
-import Contact from './components/Contact';
+import Home from './components/Home';
+import Projects from './components/Project';
+import Positions from './components/Position';
+import Skills from './components/Skills';
+import Contact from './components/Contact'
+import Menu from './menu'
+import './components/css/App.css';
+import About from './components/About';
 
-class App extends React.Component
- {
-  render ()
-   {
-     return(
-       <div className="outerwrapper">
-         <div className="wrapper2">
-             <Intro className ="component"/>
-             <Projects className ="component"/>          
-             <Achievements className ="component"/>
-             <News className ="component"/>
-             <Contact className ="component"/>
-           </div>
-         </div>
-     )  
-  }
-  
+function App() {
+  return (
+    <div className="App">
+    <Menu />
+    <Content/>
+   
+    </div>
+  );
 }
+
 export default App;
 
 
-  
- 
-  
- 
-
+function Content() {
+  return (
+    <div className="Content">
+      <div className="wrapper">
+      <Home />
+      <Projects/>
+      <Positions/>
+      <Skills/>
+      <About/>
+      <Contact/>
+      </div>
+    </div>
+  );
+}

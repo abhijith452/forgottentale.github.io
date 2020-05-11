@@ -1,13 +1,80 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Open Sans';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body{
+  background-color: #1D1D1D;
+
+}
+.Content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper{
+  width: 1080px;
+}
+
+.Menu{
+  background-color: #181818;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Menu ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+.Menu li{
+margin: 20px;
+opacity: .2;
+}
+.Menu a{
+  color: #10EFFF;
+  position: relative;
+}
+.Menu li:hover{
+  opacity: 1;
+  }
+.Menu a:hover{
+  color: rgb(188, 230, 1);
+}
+.title{
+  
+  letter-spacing: 10px;
+  padding: 150px 0;
+  color: white;
+}
+
+span{
+  color: #0FA9D8;
+}
+button{
+  background-color: #1D1D1D;
+  border:1px #EFFF00 solid;
+  width: 140px;
+  height: 40px;
+  color: #EFFF00;
+  margin-top: 20px;
+}
+button:hover{
+  background-color: #EFFF00;
+  color: #1D1D1D;
+}
+@media only screen and (max-width: 768px){
+  .Menu ul{
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  .Menu{
+    width: 100ch;
+    height: auto;
+  }
 }

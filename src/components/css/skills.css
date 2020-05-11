@@ -1,0 +1,39 @@
+.PB{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.Skills{
+    height: 100vh;
+}
+.Skills .progressbar{
+    color: white;
+    margin: 0 auto;
+}
+.Skills .progressbar h4{
+    margin-bottom: 20px;
+
+}
+.Skills .progressbar .pbouter{
+    width: 400px;
+    height: 40px;
+    border-radius: 80px;
+    border: 1px #14FFD8 solid;
+    margin-bottom: 40px;
+}
+.Skills .progressbar .pbinner{
+    background-color: #14FFD8;
+    height: 40px;
+    border-radius: 80px;
+}
+   @media only screen and (max-width: 768px){
+
+    .PB{
+       
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Skills{
+        height: auto;
+        margin-bottom: 80px;
+    }
+    
+   }

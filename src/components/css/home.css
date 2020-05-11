@@ -1,0 +1,22 @@
+.Home{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Home h1{
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+}
+.Home p{
+    color: rgb(73, 73, 73);
+    margin-top: 10px;
+    font-weight: 300;
+}
+@media only screen and (max-width: 768px){
+
+    .Home img{
+        display: none;
+    }
+}
