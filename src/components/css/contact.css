@@ -84,3 +84,22 @@ justify-content: space-between;
     }
     
 }
+
+@media only screen and (max-width: 768px){
+    .Contact h3{
+        font-size: 30px;
+    }
+    .Contact form {
+        width: 70%;
+    }
+    .Contact form .email{
+    flex-direction: column;
+    }
+    .Contact form .email input{
+    width: 97.5%;
+    }
+    .socials{
+        width: 70%;
+        margin-bottom: 60px;
+    }
+}

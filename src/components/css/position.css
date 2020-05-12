@@ -34,10 +34,18 @@
     @media only screen and (max-width: 768px){
         .vcardbody{
             flex-direction: column;
-            width: 80vh;
+            width: 70%
         }
         .vcardbody img{
             margin: 0 auto;
             margin-bottom: 20px;
+            width: 65%;
+        }
+        .vcardbody h3{
+            margin: 0;
+            margin: 20px 0;
+        }
+        .vcardbody p{
+            margin: 0;
         }
     }
