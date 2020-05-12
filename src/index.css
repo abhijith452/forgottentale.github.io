@@ -21,9 +21,12 @@ body{
   background-color: #181818;
   height: 100vh;
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+
+}
+.spacer{
+  flex: 1;
 }
 .Menu ul{
   display: flex;
@@ -67,8 +70,32 @@ button:hover{
   background-color: #EFFF00;
   color: #1D1D1D;
 }
+.hamburger{
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.hamburger .toggle_div{
+  width: 30px;
+  height: 4px;
+  background-color: rgb(88, 88, 88);
+  border-radius: 8px;
+  
+}
+.hamburger .toggle_div:nth-child(2){
+  width: 50%;
+
+}
+.hamburger .toggle_div:nth-child(3){
+  width: 25%;
+
+}
 @media only screen and (max-width: 768px){
-  .Menu ul{
+  /* .Menu ul{
     flex-direction: row;
     justify-content: center;
     
@@ -76,5 +103,8 @@ button:hover{
   .Menu{
     width: 100ch;
     height: auto;
+  } */
+  .Menu{
+    display: none;
   }
 }

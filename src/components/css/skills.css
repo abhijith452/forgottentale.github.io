@@ -35,5 +35,19 @@
         height: auto;
         margin-bottom: 80px;
     }
+    .Skills .progressbar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Skills .progressbar .pbouter{
+        width: 70%;
+        height: 30px;
+    }
+    .Skills .progressbar .pbinner{
+        height: 30px;
+    }
     
    }

@@ -22,4 +22,8 @@
     .About{
         flex-direction: column;
     }
+    .About .abouttext{
+        width: 70%;
+    }
+   
 }
