@@ -22,4 +22,11 @@
     .About{
         flex-direction: column;
     }
+    .About .abouttext{
+        width: 70%;
+    }
+    .About img{
+        width: 70%;
+    }
+   
 }

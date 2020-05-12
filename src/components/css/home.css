@@ -20,3 +20,14 @@ align-items: center;
         display: none;
     }
 }
+@media only screen and (max-width: 480px){
+    .Home h1{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 410px){
+    .Home h1{
+        font-size: 40px;
+    }
+    
+}
