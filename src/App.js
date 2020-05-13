@@ -11,6 +11,11 @@ import About from './components/About';
 function App() {
   return (
     <div className="App">
+        <button className="hamburger mobile">
+        <div className="toggle_div"></div>
+        <div className="toggle_div"></div>
+        <div className="toggle_div"></div>
+    </button>
     <Menu />
     <Content/>
    
