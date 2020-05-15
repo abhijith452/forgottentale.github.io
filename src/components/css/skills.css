@@ -8,13 +8,18 @@
 .Skills .progressbar{
     color: white;
     margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .Skills .progressbar h4{
     margin-bottom: 20px;
 
 }
 .Skills .progressbar .pbouter{
-    width: 400px;
+    width: 70%;
     height: 40px;
     border-radius: 80px;
     border: 1px #14FFD8 solid;
@@ -34,13 +39,6 @@
     .Skills{
         height: auto;
         margin-bottom: 80px;
-    }
-    .Skills .progressbar{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .Skills .progressbar .pbouter{
         width: 70%;
