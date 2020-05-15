@@ -15,7 +15,6 @@ function Menu() {
 var width = {width:"auto"};
 var home,skills,projects,pos,about,contact;
 
-
   if(open.open===true)
   {
     width = {width:"200px"}
@@ -28,7 +27,7 @@ var home,skills,projects,pos,about,contact;
 
   }
   return (
-    <div className="Menu" onClick={toggle} style={width}>
+    <div className="Menu" onClick={toggle} style={width} id="menu">
       <button className="hamburger">
         <div className="toggle_div"></div>
         <div className="toggle_div"></div>
