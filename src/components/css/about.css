@@ -5,10 +5,10 @@
     align-items: center;
 }
 .About img{
-    width: 400px;
+    width: 30%;
 }
 .About .abouttext{
-    width: 600px;
+    width: 40%;
 }
 .About h3{
     font-size: 40px;
@@ -24,6 +24,7 @@
     }
     .About .abouttext{
         width: 70%;
+        margin-bottom: 40px;
     }
     .About img{
         width: 70%;

@@ -10,7 +10,7 @@ function Home() {
                 I'm <span>Abhijith</span>,<br />
                 web developer</h1>
              <p>Front-End Web Developer | IOT developer</p>
-             <button>See Projects</button>
+             <button className="button">See Projects</button>
            </div>
              <img src={logo}></img>
 
