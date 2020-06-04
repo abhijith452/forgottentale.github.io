@@ -1,8 +1,13 @@
 .Home{
 height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
+
+}
+.Home .jumbotron{
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-50%);
+    margin-left: 10rem;
+    z-index: 1;
 }
 .Home h1{
     color: white;
@@ -13,9 +18,18 @@ align-items: center;
     color: rgb(73, 73, 73);
     margin-top: 10px;
     font-weight: 300;
+
 }
 .Home img{
-    width: 40%;
+    width: 38%;
+    position: absolute;
+    right: 0;
+    top: 50vh;
+    transform: translateY(-50%);
+    margin-right: 10rem;
+    z-index: 0;
+    max-width: 500px;
+
   
 }.button{
     background-color: #1D1D1D;
@@ -30,9 +44,23 @@ align-items: center;
     color: #1D1D1D;
   }
 @media only screen and (max-width: 1000px){
+    .Home{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
     .Home img{
         display: none;
+        
+        
       
+    }
+    .Home .jumbotron{
+
+
+        margin-left: 0;
+      
+       
     }
 }
 @media only screen and (max-width: 768px){

@@ -38,8 +38,9 @@
         }
         .vcardbody img{
             margin: 0 auto;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             width: 65%;
+            max-width: 250px;
         }
         .vcardbody h3{
             margin: 0;

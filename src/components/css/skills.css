@@ -1,6 +1,10 @@
 .PB{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 .Skills{
     height: 100vh;
@@ -19,15 +23,15 @@
 
 }
 .Skills .progressbar .pbouter{
-    width: 70%;
-    height: 40px;
+    width: 50%;
+    height: 30px;
     border-radius: 80px;
     border: 1px #14FFD8 solid;
     margin-bottom: 40px;
 }
 .Skills .progressbar .pbinner{
     background-color: #14FFD8;
-    height: 40px;
+    height: 30px;
     border-radius: 80px;
 }
    @media only screen and (max-width: 768px){

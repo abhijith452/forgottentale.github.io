@@ -11,23 +11,23 @@ function Skills(){
               />
                <Pbar
               title = "JavaScipt"
-              percent = "70%"
+              percent = "80%"
               />
                <Pbar
               title = "React.js"
-              percent = "70%"
+              percent = "60%"
               />
                <Pbar
               title = "Azure"
-              percent = "70%"
+              percent = "40%"
               />
                <Pbar
               title = "C/C++"
-              percent = "70%"
+              percent = "80%"
               />
                <Pbar
               title = "Python"
-              percent = "70%"
+              percent = "60%"
               />
               
         </div>
@@ -38,10 +38,10 @@ function Skills(){
 function Pbar(props)
 {
     return(
-        <div className="progressbar">
+        <div className="progressbar" data-aos="fade-right">
             <h4>{props.title}</h4>
               <div className="pbouter">
-                <div className="pbinner"  style={{width:props.percent}}>
+                <div className="pbinner"  style={{width:props.percent}} data-aos="fade-right">
                   
                   </div>
               </div>
