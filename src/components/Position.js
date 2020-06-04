@@ -27,7 +27,7 @@ function Position() {
 
 function Card(props){
     return(
-        <div className = "vcardbody">
+        <div className = "vcardbody" data-aos="fade-up">
            <img src={props.img}></img>
            <div>
            <h3>{props.title}</h3>

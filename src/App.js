@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import Home from './components/Home';
 import Projects from './components/Project';
 import Positions from './components/Position';
@@ -8,11 +8,17 @@ import Menu from './menu'
 import './components/css/App.css';
 import About from './components/About';
 import Mobilemenu from './MobileMenu'
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 function App() {
   const [mobile,setMobile] = useState({
     open : false
   });
+
+  useEffect(()=>{
+    Aos.init({duration:800});
+  })
   
   function toggle(){
    setMobile((prevState)=>{

@@ -4,7 +4,7 @@ import './css/contact.css';
 function Contact() {
   return (
     <div className="Contact" id="Contact">
-   <form>
+   <form data-aos="fade-right">
      <h3><span>Contact Me</span></h3>
       <div className="email">
       <input type = "text" placeholder = "Your Name"></input>
@@ -14,7 +14,7 @@ function Contact() {
        <textarea placeholder ="Message"></textarea>
        <button className="button">Sent</button>
    </form>
-   <div className="socials">
+   <div className="socials" data-aos="fade-left">
      <h4>Socials Links</h4>
      <div className="links">
       <a href="https://www.linkedin.com/in/forgottentale/"><i className="fab fa-linkedin fa-2x social-links"></i></a>

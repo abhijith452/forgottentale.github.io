@@ -1,0 +1,56 @@
+@import './main.scss';
+.menu{
+
+  @include flexbox(center,column);
+  align-items: unset;
+  background-color: #181818;
+  width: 56px;
+  height: 100vh;
+  position: fixed;
+  grid-template-rows: repeat(3,1fr);
+  z-index: 3;
+  transition: width 250ms ease-out;
+
+  &:hover{
+    width: 200px;
+
+      a{
+        p{
+          display: block;
+        }
+      
+    }
+
+  }
+
+  &_list {
+
+    @include flexbox(unset,row);
+
+ a{
+    display: none;
+    padding: 5px;
+    @include flexbox(space-around,row);
+    cursor: pointer;
+    margin: 10px;
+
+    svg{
+    
+      color: rgb(0, 70, 66);
+      width: 26px;
+    }
+
+    p{
+      display: none;
+      font-size: 18px;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: display 250 ease-out;
+      color: rgb(65, 65, 65);
+    }
+   
+  }
+  }
+
+
+}

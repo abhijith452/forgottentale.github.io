@@ -20,17 +20,17 @@ body{
 
 .Menu{
   background-color: #181818;
-  width: 5rem;
+  width: 60px;
   height: 100vh;
   position: fixed;
   display: grid;
   grid-template-rows: repeat(3,1fr);
   transition: width 500ms ease-in-out;
+  z-index: 3;
 
 }
 .Menu:hover{
   width: 200px;
-  background-color: tomato;
 }
 .spacer{
   flex: 1;
@@ -63,7 +63,7 @@ opacity: .2;
   color: rgb(188, 230, 1);
 }
 .title{
-  
+  font-size: 28px;
   letter-spacing: 10px;
   padding: 150px 0;
   color: white;

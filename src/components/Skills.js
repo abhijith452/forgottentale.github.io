@@ -38,10 +38,10 @@ function Skills(){
 function Pbar(props)
 {
     return(
-        <div className="progressbar">
+        <div className="progressbar" data-aos="fade-right">
             <h4>{props.title}</h4>
               <div className="pbouter">
-                <div className="pbinner"  style={{width:props.percent}}>
+                <div className="pbinner"  style={{width:props.percent}} data-aos="fade-right">
                   
                   </div>
               </div>

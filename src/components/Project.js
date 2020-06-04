@@ -32,7 +32,7 @@ function Projects() {
 
 function Card(props){
     return(
-        <div className = "cardbody">
+        <div className = "cardbody" data-aos="fade-left">
            <p>{props.date}</p>
            <h4>{props.cat}</h4>
            <h3>{props.title}</h3>

@@ -1,0 +1,9 @@
+*{
+    font-family: 'Open Sans';
+}
+@mixin flexbox($pos,$dir) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $pos;
+    align-items: center;
+}
