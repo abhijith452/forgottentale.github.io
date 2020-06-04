@@ -13,12 +13,14 @@ body{
   justify-content: center;
   align-items: center;
 }
-.wrapper{
-  width: 1080px;
-}
+/* .wrapper{
+  max-width: 1080px;
+  width: 92%;
+} */
 
 .Menu{
   background-color: #181818;
+  width: 5rem;
   height: 100vh;
   position: fixed;
   display: grid;
@@ -98,7 +100,9 @@ span{
 }
 .mobile{
   display: none;
+  
 }
+
 @media only screen and (max-width: 768px){
   /* .Menu ul{
     flex-direction: row;

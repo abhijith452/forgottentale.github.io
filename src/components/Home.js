@@ -4,15 +4,15 @@ import logo from './assets/logo.png'
 
 function Home() {
   return (
-    <div className="Home" id ="Home">
-        <div className="jumbotron">
-              <h1>Hi,<br />
+    <div className="Home" id="Home">
+      <div className="jumbotron">
+        <h1>Hi,<br />
                 I'm <span>Abhijith</span>,<br />
                 web developer</h1>
-             <p>Front-End Web Developer | IOT developer</p>
-             <button className="button">See Projects</button>
-           </div>
-             <img src={logo}></img>
+        <p>Front-End Web Developer | IOT developer</p>
+        <button className="button">See Projects</button>
+      </div>
+      <img src={logo}></img>
 
     </div>
   );

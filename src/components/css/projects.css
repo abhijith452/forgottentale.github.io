@@ -16,6 +16,9 @@
  border-left:1px white solid ;
  position: relative;
 }
+.cardbody:last-child{
+    border: none;
+}
 .cardbody h4{
 color: #EFFF00;
 margin-left: 60px;
@@ -32,6 +35,17 @@ margin-left: 60px;
  line-height: 22px;
  color: rgb(175, 175, 175);
  margin-left: 60px;
+}
+.cardbody p:nth-child(1)::before{
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(2, 201, 191);
+    border-radius: 50%;
+    left: 0;
+    transform: translateX(-50%);
+
 }
 @media only screen and (max-width: 768px){
   .cardbody{

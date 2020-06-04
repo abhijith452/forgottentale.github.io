@@ -11,23 +11,23 @@ function Skills(){
               />
                <Pbar
               title = "JavaScipt"
-              percent = "70%"
+              percent = "80%"
               />
                <Pbar
               title = "React.js"
-              percent = "70%"
+              percent = "60%"
               />
                <Pbar
               title = "Azure"
-              percent = "70%"
+              percent = "40%"
               />
                <Pbar
               title = "C/C++"
-              percent = "70%"
+              percent = "80%"
               />
                <Pbar
               title = "Python"
-              percent = "70%"
+              percent = "60%"
               />
               
         </div>

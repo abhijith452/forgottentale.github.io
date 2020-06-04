@@ -4,14 +4,15 @@ import {Link} from 'react-scroll';
 function MenuMoblie(props) {
 
 
-
+var classname = "Menu Menu_mobile";
 var display = {display:"none",width:"100%"};
 var home,skills,projects,pos,about,contact;
 
 console.log(props.open)
   if(props.open===true)
   {
-    display = {display:"flex",width:"100%"}
+    classname ="Menu Menu_mobile open"
+    display = {display:"flex",width:"40%",}
     home = <p>Home</p>
     skills = <p>Skills</p>
     projects = <p>Projects</p>
@@ -21,7 +22,7 @@ console.log(props.open)
 
   }
   return (
-    <div className="Menu Menu_mobile"style={display}>
+    <div className={classname}style={display}>
 
       <ul>
   <li><Link to="Home" smooth={true} duration={800}  onClick={props.callback}><i className="fas fa-home fa-1x"></i>{home}</Link></li>
