@@ -3,9 +3,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 .About img{
     width: 30%;
+    max-width: 500px;
 }
 .About .abouttext{
     width: 40%;
@@ -16,8 +19,26 @@
 }
 .About p{
     color: rgb(167, 167, 167);
+    line-height: 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1000px){
+
+    .About{
+        flex-direction: column;
+    }
+    .About .abouttext{
+        width: 70%;
+        margin-bottom: 40px;
+    }
+    .About img{
+        width: 50%;
+        min-width: 300px;
+    }
+   
+}
+/* @media only screen and (max-width: 768px){
 
     .About{
         flex-direction: column;
@@ -30,4 +51,4 @@
         width: 70%;
     }
    
-}
+} */

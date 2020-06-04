@@ -25,7 +25,12 @@ body{
   position: fixed;
   display: grid;
   grid-template-rows: repeat(3,1fr);
+  transition: width 500ms ease-in-out;
 
+}
+.Menu:hover{
+  width: 200px;
+  background-color: tomato;
 }
 .spacer{
   flex: 1;
