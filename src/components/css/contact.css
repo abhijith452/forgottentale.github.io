@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 200px;
 }
 .Contact h3{
     font-size: 40px;

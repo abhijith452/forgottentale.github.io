@@ -36,6 +36,19 @@ margin-left: 60px;
  color: rgb(175, 175, 175);
  margin-left: 60px;
 }
+.cardbody a{
+    
+    word-spacing: 2px;
+    line-height: 22px;
+    color: rgb(171, 207, 8);
+    margin-top: 20px;
+    cursor: pointer;
+   }
+   .cardbody a:hover{
+  
+    color: rgb(216, 252, 10);
+    
+   }  
 .cardbody p:nth-child(1)::before{
     content: ' ';
     position: absolute;
@@ -52,6 +65,11 @@ margin-left: 60px;
       width: 70%;
       border: none;
   }
+  .cardbody p:nth-child(1)::before{
+   display: none;
+    
+
+}
   .cardbody h4,.cardbody p,.cardbody h3{
       margin-left: 0;
   }

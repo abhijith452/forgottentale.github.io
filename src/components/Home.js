@@ -1,6 +1,7 @@
 import React from 'react';
-import './css/home.css'
-import logo from './assets/logo.png'
+import './css/home.css';
+import logo from './assets/logo.png';
+import { Link } from 'react-scroll';
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
                 I'm <span>Abhijith</span>,<br />
                 web developer</h1>
         <p>Front-End Web Developer | IOT developer</p>
-        <button className="button">See Projects</button>
+        <Link to="Projects" smooth={true} duration={800}>  <button className="button">See Projects</button></Link>
       </div>
       <img src={logo}></img>
 

@@ -3,29 +3,7 @@ import { Link } from 'react-scroll';
 import './components/css/menu.scss';
 
 function Menu() {
-  const [open, setOpen] = useState({
-    open: false
-  });
 
-  function toggle() {
-    setOpen((prevState) => {
-      return ({ open: !prevState.open })
-    })
-    console.log(open.open)
-  }
-  var width = { width: "auto" };
-  var home, skills, projects, pos, about, contact;
-
-  if (open.open === true) {
-    width = { width: "200px" }
-    home = <p>Home</p>
-    skills = <p>Skills</p>
-    projects = <p>Projects</p>
-    pos = <p>Positions</p>
-    about = <p>About</p>
-    contact = <p>Contact Me</p>
-
-  }
   return (
     <div className="menu" id="menu">
 
