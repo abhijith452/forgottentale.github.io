@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react';
+import React,{useEffect} from 'react';
 import Home from './components/Home';
 import Projects from './components/Project';
 import Positions from './components/Position';
@@ -11,7 +11,6 @@ import Aos from 'aos';
 import "aos/dist/aos.css";
 
 function App() {
-
 
   useEffect(()=>{
     Aos.init({duration:800});
