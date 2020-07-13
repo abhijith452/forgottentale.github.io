@@ -1,6 +1,6 @@
 import React from 'react';
 import pic from './assets/pic.jpg';
-import './css/about.css';
+import './css/about.scss';
 
  function About(){
      return(

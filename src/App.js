@@ -5,7 +5,7 @@ import Positions from './components/Position';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Menu from './menu'
-import './components/css/App.css';
+import './components/css/App.scss';
 import About from './components/About';
 import Aos from 'aos';
 import "aos/dist/aos.css";
