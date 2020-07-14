@@ -2,9 +2,9 @@
 import React from 'react'
 import './css/skills.scss'
 function Skills(){
-    return(<div className="Skills component" id="Skills">
-       <center><h3 className ="title">MY <span>SKILLS</span></h3></center> 
-        <div className="PB">
+    return(<div className="skills component" id="Skills">
+       <center><h3 className ="skills__title">MY <span>SKILLS</span></h3></center> 
+        <div className="skills__grid">
               <Pbar
               title = "Arduino"
               percent = "70%"
@@ -39,9 +39,9 @@ function Pbar(props)
 {
     return(
         <div className="progressbar" data-aos="fade-right">
-            <h4>{props.title}</h4>
-              <div className="pbouter">
-                <div className="pbinner"  style={{width:props.percent}} data-aos="fade-right">
+            <h4 className = "progressbar__title">{props.title}</h4>
+              <div className="progressbar__outer">
+                <div className="progressbar__inner"  style={{width:props.percent}} data-aos="fade-right">
                   
                   </div>
               </div>
