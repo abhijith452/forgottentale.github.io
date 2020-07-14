@@ -35,8 +35,8 @@ function Content() {
     <div className="Content">
       <div className="wrapper">
       <Home />
-      <Projects/>
-     
+      <Projects />
+      <Positions />
       </div>
     </div>
   );

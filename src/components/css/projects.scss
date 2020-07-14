@@ -98,7 +98,7 @@
         border: none;
 
         &__date{
-            color: $grey;
+
             margin: 20px 0;
 
             &::before{
@@ -107,10 +107,10 @@
         }
         
         &__catogory{
-            color: $yellow;
+            
             margin: 20px 0;
             @include fluid-type(320px, 1200px, 10px, 20px);
-            letter-spacing: 2px;
+            
         }
         
         &__title{
@@ -120,16 +120,12 @@
         
         &__des{
             letter-spacing: 3px;
-            word-spacing: 2px;
-            line-height: 22px;
-            color: $grey;
             margin: 20px 0;
             margin-bottom: 20px;
         }
         a{
             margin: 20px 0;
-            color: $yellow;
-            text-decoration: none;
+            
         }
     }
     

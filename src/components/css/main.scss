@@ -6,6 +6,7 @@ $yellow : #EFFF00;
 $blue : #0FA9D8;
 $grey: rgb(175, 175, 175);
 
+
 @mixin flexbox($pos,$dir) {
     display: flex;
     flex-direction: $dir;
