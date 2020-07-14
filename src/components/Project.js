@@ -3,9 +3,9 @@ import './css/projects.scss';
 
 function Projects() {
   return (
- <div className= "Projects" id ="Projects">
-   <center><h2 className = "title">MY <span>PROJECTS</span></h2></center>
-   <div className="timeline">
+ <div className= "projects" id ="Projects">
+  <center><h2 className = "projects__title">MY <span> PROJECTS</span></h2></center> 
+   <div className="projects__timeline">
    <Card 
      date ="Feb 2020"
      cat = "IOT / DATA VISUALISATION"
@@ -33,12 +33,12 @@ function Projects() {
 
 function Card(props){
     return(
-        <div className = "cardbody" data-aos="fade-left">
-           <p>{props.date}</p>
-           <h4>{props.cat}</h4>
-           <h3>{props.title}</h3>
-           <p>{props.des}</p>
-           <a href={props.link}>More Details</a>
+        <div className = "card" >
+           <p className = "card__date" >{props.date}</p>
+           <h4 className = "card__catogory" >{props.cat}</h4>
+           <h3 className = "card__title" >{props.title}</h3>
+           <p className = "card__des" >{props.des}</p>
+           <a href={props.link} className = "card__link" >More Details</a>
         </div>
     )
 }

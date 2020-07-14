@@ -36,10 +36,7 @@ function Content() {
       <div className="wrapper">
       <Home />
       <Projects/>
-      <Positions/>
-      <Skills/>
-      <About/>
-      <Contact/>
+     
       </div>
     </div>
   );
