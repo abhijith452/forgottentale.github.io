@@ -133,7 +133,7 @@
 
 
         &__message{
-            width: 350px;
+            width: 380px;
             height: 50px;
             background-color: $black;
             border: none;
@@ -142,12 +142,13 @@
             color: white;
             outline: none;
             border-radius: 20px;
+            padding: 10px 0 0 20px;
 
 
         }
 
         input{
-            width: 350px;
+            width: 380px;
             height: 50px;
             background-color: $black;
             border: none;
@@ -156,11 +157,12 @@
             color: white;
             outline: none;
             border-radius: 20px;
+            padding-left: 20px;
         }
         &__container{
          
            
-            width: 350px;
+            width: 400px;
             @include flexbox(space-between,row);
             input{
                 width: auto;
@@ -169,7 +171,7 @@
         }
 
         &__submit{
-            width: 350px;
+            width: 400px;
             height: 50px;
             outline: none;
             border-radius: 20px;
@@ -187,17 +189,11 @@
             }
 
         }
-
         
 
-        input::placeholder {
-            padding-left: 20px;
-            outline: none;
-           
-          }
-        textarea::placeholder{
-            padding: 10px 20px;
-        }  
+    
+        
+    
 
     }
 
@@ -299,10 +295,7 @@
                 @include fluid-type(320px, 1200px, 20px, 25px);
               
             }
-            &__email{
-                
-              
-            }
+           
 
             &__links{
                 width: 100%;
