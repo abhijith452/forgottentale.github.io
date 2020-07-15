@@ -1,82 +1,79 @@
-.Home{
-height: 100vh;
+@import './main.scss';
 
-}
-.Home .jumbotron{
-    position: absolute;
-    top: 50vh;
-    transform: translateY(-50%);
-    margin-left: 10rem;
-    z-index: 1;
-}
-.Home h1{
-    color: white;
-    font-weight: 900;
-    font-size: 60px;
-}
-.Home p{
-    color: rgb(73, 73, 73);
-    margin-top: 10px;
-    font-weight: 300;
+.home{
+    $min_width: 320px;
+    $max_width: 1200px;
+    $min_font: 35px;
+    $max_font: 60px;
+    height: 100vh;
+ 
+    @include flexbox(space-between,row);
+    .button{
+        background-color:$black;
+        border:1px $yellow solid;
+        width: 140px;
+        height: 40px;
+        color: $yellow;
+        margin-top: 20px;
+      }
+      .button:hover{
+        background-color: $yellow;
+        color: $black;
+      }
 
-}
-.Home img{
-    width: 38%;
-    position: absolute;
-    right: 0;
-    top: 50vh;
-    transform: translateY(-50%);
-    margin-right: 10rem;
-    z-index: 0;
-    max-width: 500px;
+    img{
+        max-width: 450px;
+       width: 30vw;
 
-  
-}.button{
-    background-color: #1D1D1D;
-    border:1px #EFFF00 solid;
-    width: 140px;
-    height: 40px;
-    color: #EFFF00;
-    margin-top: 20px;
-  }
-  .button:hover{
-    background-color: #EFFF00;
-    color: #1D1D1D;
-  }
-@media only screen and (max-width: 1000px){
-    .Home{
-        display:flex;
-        justify-content: center;
-        align-items: center;
     }
-    .Home img{
-        display: none;
+    &__intro{
+        &__text{
+            color: white;
+            font-weight: 900;
+            @include fluid-type($min_width, $max_width, $min_font, $max_font);
+          
+        }
+        &__para{
+            color: rgb(73, 73, 73);
+            margin-top: 10px;
+            font-weight: 300;
         
+        }
+
         
-      
     }
-    .Home .jumbotron{
+  }
 
 
-        margin-left: 0;
-      
-       
-    }
-}
+
+
+
 @media only screen and (max-width: 768px){
+    $min_width: 320px;
+    $max_width: 1200px;
+    $min_font: 35px;
+    $max_font: 70px;
+    .home{
 
-    .Home img{
-        display: none;
-    }
-}
-@media only screen and (max-width: 480px){
-    .Home h1{
-        font-size: 50px;
-    }
-}
-@media only screen and (max-width: 410px){
-    .Home h1{
-        font-size: 40px;
-    }
-    
+        @include flexbox(center,unset);
+        img{
+            display: none;
+        }
+        &__intro{
+            &__text{
+                color: white;
+                font-weight: 900;
+                @include fluid-type($min_width, $max_width, $min_font, $max_font);
+              
+            }
+            &__para{
+                color: rgb(73, 73, 73);
+                margin-top: 10px;
+                font-weight: 300;
+            
+            }
+
+            
+        }
+      }
 }

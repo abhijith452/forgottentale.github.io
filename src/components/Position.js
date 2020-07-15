@@ -5,9 +5,9 @@ import './css/position.scss'
 
 function Position() {
   return (
- <div className= "Positions" id="Positions">
-   <center><h2 className = "title">MY <span>POSITIONS</span></h2></center>
-   <div className="cards">
+ <div className= "positions" id="Positions">
+   <center><h2 className = "positions__title">MY <span>POSITIONS</span></h2></center>
+  
    <Card 
      img = {msp}
      title = "Microsoft Student Partner"
@@ -20,18 +20,18 @@ function Position() {
    />
  
 
-   </div>
+  
    </div>
   );
 }
 
 function Card(props){
     return(
-        <div className = "vcardbody" data-aos="fade-up">
-           <img src={props.img}></img>
-           <div>
-           <h3>{props.title}</h3>
-           <p>{props.des}</p>
+        <div className = "card2">
+           <img src={props.img} className ="card2__img"></img>
+           <div className ="card2__text">
+           <h3  className ="card2__text__title">{props.title}</h3>
+           <p className ="card2__text__des">{props.des}</p>
            </div>
          
         </div>

@@ -34,12 +34,12 @@ function Content() {
   return (
     <div className="Content">
       <div className="wrapper">
-      <Home />
-      <Projects/>
-      <Positions/>
-      <Skills/>
-      <About/>
-      <Contact/>
+        <Home />
+        <Positions />
+        <Projects />
+        <Skills />
+        <About />
+        <Contact />
       </div>
     </div>
   );
