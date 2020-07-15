@@ -11,12 +11,12 @@ function Position() {
    <Card 
      img = {msp}
      title = "Microsoft Student Partner"
-     des = "As a MSP, i have hosted a small workshop on th topic 'Fundamentals of Azure ' at my college, hosted a webinar on the topic 'Getting started with Azure IoT' and have co organized two other webinars as well "
+     des = "As a MSP, i have hosted a small workshop on th topic Fundamentals of Azure  at my college, hosted a webinar on the topic Getting started with Azure IoT and have co organized two other webinars as well "
    />
    <Card 
      img = {bolt}
      title = "Bolt Student Ambassasor"
-     des = "The internship responsibilities includes promotion of Internet of Things and Machine Learning online training and organise a webinar on the topic 'IoT and ML meet-up' at my college" />
+     des = "The internship responsibilities includes promotion of Internet of Things and Machine Learning online training and organise a webinar on the topic IoT and ML meet-up at my college" />
  
 
   
