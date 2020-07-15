@@ -34,7 +34,11 @@ function Content() {
   return (
     <div className="Content">
       <div className="wrapper">
-      <About />
+        <Home />
+        <Positions />
+        <Projects />
+        <Skills />
+        <About />
       </div>
     </div>
   );
