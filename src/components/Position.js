@@ -28,7 +28,7 @@ function Position() {
 function Card(props){
     return(
         <div className = "card2">
-           <img src={props.img} className ="card2__img"></img>
+           <img alt = "card" src={props.img} className ="card2__img"></img>
            <div className ="card2__text">
            <h3  className ="card2__text__title">{props.title}</h3>
            <p className ="card2__text__des">{props.des}</p>
