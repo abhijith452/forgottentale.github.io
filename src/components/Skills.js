@@ -1,6 +1,6 @@
 
 import React from 'react'
-import './css/skills.scss'
+import './scss/skills.scss'
 function Skills(){
     return(<div className="skills component" id="Skills">
        <center><h3 className ="skills__title">MY <span>SKILLS</span></h3></center> 
