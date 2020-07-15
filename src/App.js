@@ -39,6 +39,7 @@ function Content() {
         <Projects />
         <Skills />
         <About />
+        <Contact />
       </div>
     </div>
   );

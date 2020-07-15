@@ -1,106 +1,317 @@
-.Contact{
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 200px;
-}
-.Contact h3{
-    font-size: 40px;
-    margin-bottom: 40px;
-    color: white;
-}
-.Contact form{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
+// .Contact{
+//     height: 100vh;
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     padding-bottom: 200px;
+// }
+// .Contact h3{
+//     font-size: 40px;
+//     margin-bottom: 40px;
+//     color: white;
+// }
+// .Contact form{
+//     display: flex;
+//     flex-direction: column;
+//     width: 400px;
  
-}
-.Contact form input{
-    height: 50px;
-    margin: 20px 0;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(75, 75, 75);
-    color: white;
-    padding-left: 10px;
-}
-.Contact form .email{
-display: flex;
-justify-content: space-between;
-}
-.Contact form .email input{
-    width: 180px;
-    padding-left: 10px;
-}
+// }
+// .Contact form input{
+//     height: 50px;
+//     margin: 20px 0;
+//     border: none;
+//     border-radius: 10px;
+//     background-color: rgb(75, 75, 75);
+//     color: white;
+//     padding-left: 10px;
+// }
+// .Contact form .email{
+// display: flex;
+// justify-content: space-between;
+// }
+// .Contact form .email input{
+//     width: 180px;
+//     padding-left: 10px;
+// }
 
-.Contact form textarea{
-    height: 60px;
-    margin: 20px 0;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(75, 75, 75);
-    color: white;
-    padding-left: 10px;
-    padding-top: 10px;
-}
+// .Contact form textarea{
+//     height: 60px;
+//     margin: 20px 0;
+//     border: none;
+//     border-radius: 10px;
+//     background-color: rgb(75, 75, 75);
+//     color: white;
+//     padding-left: 10px;
+//     padding-top: 10px;
+// }
 
-.Contact .socials h4{
-    font-size: 20px;
-    color: white;
-    margin-bottom: 20px;
-}
-.Contact .socials .links{
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
+// .Contact .socials h4{
+//     font-size: 20px;
+//     color: white;
+//     margin-bottom: 20px;
+// }
+// .Contact .socials .links{
+//     width: 200px;
+//     display: flex;
+//     justify-content: space-between;
   
 
-}
-.Contact .socials .links a{
-    color: white;
-}
-.Contact .socials .links a:hover{
-    color: rgb(34, 166, 255);
-}
-.Contact .socials h5{
-    font-size: 20px;
-    color: white;
-    margin: 20px 0;
-    margin-top: 60px;
-}
-.Contact .socials p{
-    color: white;
-}
+// }
+// .Contact .socials .links a{
+//     color: white;
+// }
+// .Contact .socials .links a:hover{
+//     color: rgb(34, 166, 255);
+// }
+// .Contact .socials h5{
+//     font-size: 20px;
+//     color: white;
+//     margin: 20px 0;
+//     margin-top: 60px;
+// }
+// .Contact .socials p{
+//     color: white;
+// }
 
-@media only screen and (max-width: 768px){
-    .Contact{
-        margin-top: 120px;
-        flex-direction: column;
+// @media only screen and (max-width: 768px){
+//     .Contact{
+//         margin-top: 120px;
+//         flex-direction: column;
         
-    }
-    .socials{
-        width: 60vh;
-        margin-top: 80px;
-    }
+//     }
+//     .socials{
+//         width: 60vh;
+//         margin-top: 80px;
+//     }
     
+// }
+
+// @media only screen and (max-width: 768px){
+//     .Contact h3{
+//         font-size: 30px;
+//     }
+//     .Contact form {
+//         width: 70%;
+//     }
+//     .Contact form .email{
+//     flex-direction: column;
+//     }
+//     .Contact form .email input{
+//     width: 97.5%;
+//     }
+//     .socials{
+//         width: 70%;
+//         margin-bottom: 60px;
+//     }
+// }
+
+
+
+
+@import './main.scss';
+
+.contact{
+   margin: 100px 0;
+    height: 100vh;
+    @include flexbox(space-between,row);
+ 
+
+   
+
+
+    &__form{
+       width: 400px;
+
+        &__title{
+            @include fluid-type(320px, 1200px, 20px, 35px);
+            margin-top: 60px;
+            margin-bottom: 60px;
+
+        }
+
+       
+
+
+        &__message{
+            width: 350px;
+            height: 50px;
+            background-color: $black;
+            border: none;
+            border: 1px $grey solid;
+            margin-bottom: 30px;
+            color: white;
+            outline: none;
+            border-radius: 20px;
+
+
+        }
+
+        input{
+            width: 350px;
+            height: 50px;
+            background-color: $black;
+            border: none;
+            border: 1px $grey solid;
+            margin-bottom: 30px;
+            color: white;
+            outline: none;
+            border-radius: 20px;
+        }
+        &__container{
+         
+           
+            width: 350px;
+            @include flexbox(space-between,row);
+            input{
+                width: auto;
+            }
+
+        }
+
+        &__submit{
+            width: 350px;
+            height: 50px;
+            outline: none;
+            border-radius: 20px;
+            
+            background-color: $black;
+            outline: none;
+            border: none;
+            border: 1px $yellow solid;
+            color: white;
+
+            &:hover{
+                background-color: $yellow;
+                color: $black;
+
+            }
+
+        }
+
+        
+
+        input::placeholder {
+            padding-left: 20px;
+            outline: none;
+           
+          }
+        textarea::placeholder{
+            padding: 10px 20px;
+        }  
+
+    }
+
+
+    &__socials{
+       width: 40%;
+ 
+        
+        &__title{
+            margin-bottom: 40px;
+            @include fluid-type(320px, 1200px, 16px, 25px);
+            color :$blue;
+        }
+        &__email{
+            color: white;
+            margin-bottom: 60px;
+        }
+
+        &__links{
+            width: 100%;
+            @include flexbox(space-around,row);
+
+            a{
+                text-decoration: none;
+                color: white;
+                margin-bottom: 40px;
+
+                &:hover{
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+  
 }
 
 @media only screen and (max-width: 768px){
-    .Contact h3{
-        font-size: 30px;
-    }
-    .Contact form {
-        width: 70%;
-    }
-    .Contact form .email{
-    flex-direction: column;
-    }
-    .Contact form .email input{
-    width: 97.5%;
-    }
-    .socials{
-        width: 70%;
-        margin-bottom: 60px;
+
+    .contact{
+
+        height: auto;
+         
+        @include flexbox(center,column);
+
+
+        &__form{
+            @include flexbox(center,column);
+            width: 100%;
+
+            &__title{
+                @include fluid-type(320px, 1200px, 30px, 40px);
+                margin-bottom: 50px;
+
+            }
+
+            &__container{
+                @include flexbox(unset,column);
+                width: 100%;
+
+            }
+
+
+            &__message{
+                width: 100%;
+                
+
+
+            }
+
+            input{
+                width: 100%;
+               
+            }
+
+            &__submit{
+                width: 100%;
+               
+
+              
+
+            }
+
+            
+
+       
+
+        }
+
+
+        &__socials{
+
+            margin-top: 60px;
+            width: 100%;
+            @include flexbox(center,column);
+
+            &__title{
+               
+                @include fluid-type(320px, 1200px, 20px, 25px);
+              
+            }
+            &__email{
+                
+              
+            }
+
+            &__links{
+                width: 100%;
+                
+
+             
+            }
+        }
+
+      
     }
 }

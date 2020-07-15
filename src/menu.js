@@ -15,16 +15,17 @@ function Menu() {
         </Link>
       </div>
 
-      <div className="menu_list">
-        <Link to="Projects" smooth={true} duration={800}>
-        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-          <p className="menu_text">Projects</p>
-        </Link>
-      </div>
+      
       <div className="menu_list">
         <Link to="Positions" smooth={true} duration={800}>
         <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-server"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
           <p className="menu_text">Positions</p>
+        </Link>
+      </div>
+      <div className="menu_list">
+        <Link to="Projects" smooth={true} duration={800}>
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          <p className="menu_text">Projects</p>
         </Link>
       </div>
 
