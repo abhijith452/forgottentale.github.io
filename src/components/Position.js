@@ -1,7 +1,7 @@
 import React from 'react';
 import msp from './assets/Msp.svg';
-import bolt from './assets/Bolt Logo.svg';
-import './css/position.scss'
+import bolt from './assets/bolt.jpg';
+import './scss/position.scss'
 
 function Position() {
   return (

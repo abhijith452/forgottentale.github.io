@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import './components/css/menu.scss';
+import './components/scss/menu.scss';
 
 function Menu() {
 
