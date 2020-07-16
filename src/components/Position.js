@@ -1,6 +1,6 @@
 import React from 'react';
 import msp from './assets/Msp.svg';
-import bolt from './assets/bolt.jpg';
+import bolt from './assets/bolt.svg';
 import './scss/position.scss'
 
 function Position() {
