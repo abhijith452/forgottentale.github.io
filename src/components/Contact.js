@@ -12,10 +12,10 @@ function Contact() {
         <div className="contact__form__container"></div>
           <input className="contact__form__container__input" type="text" placeholder="Your Name" name="name"></input>
           <input className="contact__form__container__input" type="email" placeholder="Your E-mail" name="email"></input>
+          <input type="text" className="contact__form__subject" placeholder="Subject" name="subject"></input>
 
-
-        <input type="text" className="contact__form__subject" placeholder="Subject" name="subject"></input>
         <textarea placeholder="Message" name="message" className="contact__form__message"></textarea>
+        
         <button type="submit" className="contact__form__submit" >Sent</button>
       </form >
 
