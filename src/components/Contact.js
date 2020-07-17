@@ -5,19 +5,27 @@ function Contact() {
   return (
     <div className="contact" id="Contact">
 
-      <form className="contact__form" name="contact" action="POST" data-netlify="true">
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 
-        <h3 className="contact__form__title"><span>Contact Me</span></h3>
-
-     
-          <input className="contact__form__container__input" type="text" placeholder="Your Name" name="name"></input>
-          <input className="contact__form__container__input" type="email" placeholder="Your E-mail" name="email"></input>
-
-
-        <input type="text" className="contact__form__subject" placeholder="Subject" name="subject"></input>
-        <textarea placeholder="Message" name="message" className="contact__form__message"></textarea>
-        <button type="submit" className="contact__form__submit" >Sent</button>
-      </form >
 
 
 
