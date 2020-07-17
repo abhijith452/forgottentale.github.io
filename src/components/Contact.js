@@ -4,7 +4,7 @@ import './scss/contact.scss';
 function Contact() {
   return (
     <div className="contact" id="Contact">
-<form name="contact" netlify>
+<form name="contact" action="POST" netlify>
   <p>
     <label>Name <input type="text" name="name" /></label>
   </p>
