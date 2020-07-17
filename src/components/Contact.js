@@ -10,11 +10,11 @@ function Contact() {
         <h3 className="contact__form__title"><span>Contact Me</span></h3>
 
         <div className="contact__form__container">
-          <input className="contact__form__container__input" type="text" placeholder="Your Name" name="name" value="contact"></input>
-          <input className="contact__form__container__input" type="email" placeholder="Your E-mail" name="email" value="contact"></input>
-          <input type="text" className="contact__form__subject" placeholder="Subject" name="subject"value="contact"></input>
+          <input className="contact__form__container__input" type="text" placeholder="Your Name" name="name" ></input>
+          <input className="contact__form__container__input" type="email" placeholder="Your E-mail" name="email" ></input>
+          <input type="text" className="contact__form__subject" placeholder="Subject" name="subject"></input>
           </div>
-        <textarea placeholder="Message" className="contact__form__message" name="message" value="contact"></textarea>
+        <textarea placeholder="Message" className="contact__form__message" name="message" ></textarea>
         
         <button type="submit" className="contact__form__submit" >Sent</button>
       </form >
