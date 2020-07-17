@@ -5,21 +5,19 @@ function Contact() {
   return (
     <div className="contact" id="Contact">
 
-<form name="contact" method="post">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>,
+      <form className="contact__form" name="contact" method = "post">
+
+        <h3 className="contact__form__title"><span>Contact Me</span></h3>
+
+        <div className="contact__form__container">
+          <input className="contact__form__container__input" type="text" placeholder="Your Name" name="name" value="contact"></input>
+          <input className="contact__form__container__input" type="email" placeholder="Your E-mail" name="email" value="contact"></input>
+          <input type="text" className="contact__form__subject" placeholder="Subject" name="subject"value="contact"></input>
+          </div>
+        <textarea placeholder="Message" className="contact__form__message" name="message" value="contact"></textarea>
+        
+        <button type="submit" className="contact__form__submit" >Sent</button>
+      </form >
 
 
 
