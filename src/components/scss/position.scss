@@ -41,6 +41,19 @@
             word-spacing: 2px;
             line-height: 25px;
         }
+
+        &__link{
+            text-decoration: none;
+            color: $yellow;
+
+            &:hover{
+               color: $blue;
+            }
+        }
+
+        &__date{
+            color: $grey;
+        }
     }
 }
 
