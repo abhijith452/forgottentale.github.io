@@ -5,18 +5,19 @@
 }
 
 body{
-  background-color: #1D1D1D;
+  background-color: #1b1b1b;
+  width: 100%;
 
+}
+html{
+  width: 100%;
 }
 .Content{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* .wrapper{
-  max-width: 1080px;
-  width: 92%;
-} */
+
 
 
 
