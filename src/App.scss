@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+$color1 : #1A1527;
+$color2 : #2A2340;
+$color3 : #958FA7;
+$color4 : white;
+
 @mixin flexbox($pos, $dir) {
   display: flex;
   flex-direction: $dir;
@@ -20,7 +25,9 @@ body{
 html,body{
   height: 100%;
 }
-
+#root{
+  height: 100%;
+}
 .outer_wrapper{
   width: 100%;
   height: 100%;
@@ -28,7 +35,7 @@ html,body{
   align-items: unset;
 
   .inner_wrapper{
-    width: 80%;
+    width: 90%;
     height: 100%;
   }
 

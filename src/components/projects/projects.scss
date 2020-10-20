@@ -1,1 +1,86 @@
 @import '../../App.scss';
+
+
+.projects{
+
+    height: 100%;
+    @include flexbox(normal,column);
+    align-items: unset;
+    &__text{
+        width: 45%;
+        margin-left: 30px;
+        &__title{
+            display: block;
+            color: $color2;
+            font-size: 200px;
+            font-weight: 800;
+            font-style: italic;
+            height: 180px;
+            float: left;
+            margin-top: 30px;
+            @include flexbox(normal,row);
+        }
+        &__TitleFullForm{
+            color: $color3;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        &__subTitle{
+            font-size: 16px;
+            color: $color3;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        &__paragraph{
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+        &__icons{
+            @include flexbox(space-between,row);
+            margin-bottom: 40px;
+
+            svg{
+                width: 40px;
+                height: 40px;
+               
+            }
+        }
+      
+    }
+
+    &__img{
+      position: fixed;   
+      top:50%;
+      transform: translateY(-50%);
+      right:0;
+      margin-right: 5%;
+    
+      
+   
+    }
+    &__menu{
+        @include flexbox(center,row);
+        background-color: $color1;
+        height: 60px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        box-shadow:  0 0 40px rgba(0,0,10,0.25);
+   
+        .container{
+            @include flexbox(space-between,row);
+            width: 600px
+        }
+        svg {
+            width: 30px;
+            height: 30px;
+            
+             path{
+                fill:$color3;
+             }
+        }
+    }
+}
