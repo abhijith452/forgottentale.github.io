@@ -1,0 +1,35 @@
+*{
+  font-family: Poppins;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flexbox($pos, $dir) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $pos;
+  align-items: center;
+}
+body{
+  background-color: #1A1527;
+
+
+}
+html,body{
+  height: 100%;
+}
+
+.outer_wrapper{
+  width: 100%;
+  height: 100%;
+  @include flexbox(center, center);
+  align-items: unset;
+
+  .inner_wrapper{
+    width: 80%;
+    height: 100%;
+  }
+
+}
