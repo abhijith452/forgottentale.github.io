@@ -8,6 +8,7 @@ function Projects() {
 
     var title = useRef((null));
     var text = useRef((null));
+    var image = useRef((null));
 
 
 
@@ -22,12 +23,12 @@ function Projects() {
       
 
         tl.from(title, 1, { x: 1000, ease: Power2.easeOut },"Start")
-        tl.staggerFrom([subTitle,year,role,icons,details],.6,{
+        tl.staggerFrom([subTitle,image,year,role,icons,details,],.6,{
             y:44,
             ease:Power2.easeOut,
             delay:.6
         },.15,"Start")
-        .staggerTo([subTitle,year,role,icons,details],.3,{opacity:1,delay:.6},.15,"Start")
+        .staggerTo([subTitle,image,year,role,icons,details,],.3,{opacity:1,delay:.6},.15,"Start")
 
 
     });
@@ -71,8 +72,10 @@ function Projects() {
 
                
             </div>
-            <div className="projects__img">
-                <div style={{ width: 618, height: 314, backgroundColor: "white", borderRadius: 10 }}></div>
+            <div className="projects__img" ref={e=>{image=e}}>
+                <div className="images" style={{ width: 618, height: 314, backgroundColor: "white", borderRadius: 10 }}>
+                    
+                </div>
 
             </div>
 
