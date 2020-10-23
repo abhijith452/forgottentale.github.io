@@ -10,7 +10,9 @@
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-tilt": "^0.1.4",
+    "vanilla-tilt": "^1.7.0"
   },
   "scripts": {
     "start": "react-scripts start",

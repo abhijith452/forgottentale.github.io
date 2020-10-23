@@ -2,7 +2,7 @@
 
 
 .projects{
-    overflow: hidden;
+  
     height: 100%;
     @include flexbox(normal,column);
     align-items: unset;
@@ -64,8 +64,10 @@
       transform: translateY(-50%);
       right:0;
       margin-right: 5%;
+      transform-style: "preserve-3d" ;
     
       .images{
+        transform: "preserve-3d" ;
           background-image: url('./img.png');
           background-size: cover;
           background-position: center center;

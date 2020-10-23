@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import { Power2, TimelineLite } from 'gsap';
+import { Power2, TimelineLite} from 'gsap';
+import Tilt from 'react-tilt'
 import './projects.scss';
 
 function Projects() {
@@ -32,6 +33,25 @@ function Projects() {
 
 
     });
+
+    var imgTilt = (e)=>{
+    //     const state = {
+    //         rect: undefined,
+    //         mouseX: undefined,
+    //         mouseY: undefined
+    //       };
+  
+
+    // state.rect = image.getBoundingClientRect();
+   
+    // state.mouseX = e.clientX;
+    // state.mouseY = e.clientY;
+    // const px = (state.mouseX - state.rect.left) / state.rect.width;
+    // const py = (state.mouseY - state.rect.top) / state.rect.height;
+
+    // image.style.setProperty("--px", px);
+    // image.style.setProperty("--py", py);
+    }
 
 
 
@@ -72,12 +92,16 @@ function Projects() {
 
                
             </div>
-            <div className="projects__img" ref={e=>{image=e}}>
-                <div className="images" style={{ width: 618, height: 314, backgroundColor: "white", borderRadius: 10 }}>
+            <div className="projects__img Tilt" options={{ max : 25 }}style={{ width: 618, height: 314,}} ref={e=>{image=e}} onMouseMove={e=>{imgTilt(e)}}>
+            <Tilt className="Tilt" options={{ max : 25 }}  >
+                <div className="images " style={{ width: 618, height: 314, backgroundColor: "white", borderRadius: 10 }}>
                     
                 </div>
-
+                </Tilt>
             </div>
+            
+
+
 
             <div className="projects__menu">
 
