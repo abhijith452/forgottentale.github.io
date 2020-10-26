@@ -34,25 +34,6 @@ function Projects() {
 
     });
 
-    var imgTilt = (e)=>{
-    //     const state = {
-    //         rect: undefined,
-    //         mouseX: undefined,
-    //         mouseY: undefined
-    //       };
-  
-
-    // state.rect = image.getBoundingClientRect();
-   
-    // state.mouseX = e.clientX;
-    // state.mouseY = e.clientY;
-    // const px = (state.mouseX - state.rect.left) / state.rect.width;
-    // const py = (state.mouseY - state.rect.top) / state.rect.height;
-
-    // image.style.setProperty("--px", px);
-    // image.style.setProperty("--py", py);
-    }
-
 
 
     return (
