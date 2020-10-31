@@ -1,24 +1,27 @@
+
+$color1 : #1A1527;
+$color2 : #2A2340;
+$color3 : #958FA7;
+$color4 : white;
+$font1 : "Gontserrat";
 *{
-  font-family: Poppins;
+  font-family: "Gontserrat";
   color: white;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-$color1 : #1A1527;
-$color2 : #2A2340;
-$color3 : #958FA7;
-$color4 : white;
 
-@mixin flexbox($pos, $dir) {
+
+@mixin flexbox($dir, $pos) {
   display: flex;
   flex-direction: $dir;
   justify-content: $pos;
   align-items: center;
 }
 body{
-  background-color: #1A1527;
+  background-color: #011126;
 
 
 }
@@ -35,7 +38,7 @@ html,body{
   align-items: unset;
 
   .inner_wrapper{
-    width: 90%;
+    width: 80%;
     height: 100%;
   }
 

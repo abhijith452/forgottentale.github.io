@@ -1,0 +1,54 @@
+@import '../../App.scss';
+
+.menu{
+    height: 100%;
+    width: 10%;
+    max-width: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: none;
+    border-right:1px #032859 solid;
+    @include flexbox(column, space-between);
+
+    &_logo{
+      
+        svg{
+            fill:white;
+            width: 80px;
+        }
+    }
+    &_hamberger{
+        height: 35px;
+        width: 40px;
+        @include flexbox(column, space-between);
+        align-items: unset;
+
+        &_rect{
+           
+            height: 2px;
+            border: none;
+            border-radius: 50px;
+            
+            background-color: white;
+            &:nth-child(2){
+                width: 50%;
+            }
+            &:nth-child(3){
+                width: 25%;
+            }
+        }
+
+    }
+    &_icons{
+        height: 100px;
+        @include flexbox(column, space-between);
+        align-items: unset;
+        margin-bottom: 25px;
+
+        svg{
+            width: 12px;
+            
+        }
+    }
+}
