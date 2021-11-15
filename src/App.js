@@ -12,16 +12,20 @@ import "aos/dist/aos.css";
 
 function App() {
 
+  
+
   useEffect(()=>{
+   
     Aos.init({duration:800});
+    window.location.replace("https://forgottentale.vercel.app/")
   })
   
 
   return (
     <div className="App" id="App">
-      
+{/*       
     <Menu />
-    <Content/>
+    <Content/> */}
    
     </div>
   );
