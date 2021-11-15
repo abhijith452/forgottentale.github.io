@@ -4,7 +4,7 @@ import Projects from './components/Project';
 import Positions from './components/Position';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-import Menu from './menu'
+// import Menu from './menu'
 import './components/scss/App.scss';
 import About from './components/About';
 import Aos from 'aos';
@@ -34,17 +34,17 @@ function App() {
 export default App;
 
 
-function Content() {
-  return (
-    <div className="Content">
-      <div className="wrapper">
-        <Home />
-        <Positions />
-        <Projects />
-        <Skills />
-        <About />
-        <Contact />
-      </div>
-    </div>
-  );
-}
+// function Content() {
+//   return (
+//     <div className="Content">
+//       <div className="wrapper">
+//         <Home />
+//         <Positions />
+//         <Projects />
+//         <Skills />
+//         <About />
+//         <Contact />
+//       </div>
+//     </div>
+//   );
+// }
